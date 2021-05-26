@@ -1,0 +1,12 @@
+{
+
+    "libs.uix.components.label": [
+        "AutoScaleLabel"
+    ],
+
+    "libs.uix.baseclass.mymdflatbutton": [
+        "MyMDFlatButton:"
+    ]
+
+}
+

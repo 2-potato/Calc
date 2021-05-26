@@ -1,0 +1,82 @@
+#:import C kivy.utils.get_color_from_hex
+#:import MyMDFlatButton libs.uix.baseclass.mymdflatbutton.MyMDFlatButton
+#:import add_number calculator
+
+<HomeScreen>:
+
+    MDBoxLayout:
+        orientation: "vertical"
+        
+
+        MDToolbar:
+            title: "Empty Activity"
+            height: '30dp'
+            font_size: '5dp'
+            specific_text_color: C('#e5e5e5')
+            left_action_items: [["dots-vertical", lambda x: x]]
+
+        MDBoxLayout:
+            
+            size_hint_y: .4
+
+            MDLabel:
+                id: lbl
+                text: ''
+                text_color: C('#e5e5e5')
+                theme_text_color: "Custom"
+                halign: 'right'
+                valign: 'bottom'
+                md_bg_color:C('#2b292a')
+                font_name: 'Lato'
+                bold: True
+                font_size: '24sp'
+        
+        MDGridLayout:
+            cols:4
+            spacing: '5dp'
+            
+            MyMDFlatButton:
+                text:'1'
+                md_bg_color: C('#2f343f')
+                on_release: app.add_number(self.text)
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+            MyMDFlatButton:
+                text:'btn'
+        
+        
+
